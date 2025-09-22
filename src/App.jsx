@@ -1,13 +1,15 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import BotSection from './components/BotSection'
 import AirdropCalculator from './components/AirdropCalculator'
+import WelcomePopup from './components/WelcomePopup'
 
 gsap.registerPlugin(ScrollTrigger)
 
 function App() {
   const appRef = useRef(null)
+  const [showWelcomePopup, setShowWelcomePopup] = useState(true)
 
   useEffect(() => {
     // Initialize GSAP animations
@@ -43,8 +45,14 @@ function App() {
   }
 
   return (
-    <div ref={appRef} className="min-h-screen bg-gradient-dark">
-      <main className="relative">
+    <div ref={appRef} className={`min-h-screen bg-gradient-dark ${showWelcomePopup ? 'overflow-hidden' : ''}`}>
+      {/* Welcome Popup */}
+      <WelcomePopup
+        isVisible={showWelcomePopup}
+        onClose={() => setShowWelcomePopup(false)}
+      />
+
+      <main className={`relative ${showWelcomePopup ? 'blur-sm' : ''} transition-all duration-300`}>
         <section className="h-screen relative overflow-hidden">
           <div className="container mx-auto px-4 py-4 h-full flex flex-col">
             {/* Join AsterDEX Section - Top */}
