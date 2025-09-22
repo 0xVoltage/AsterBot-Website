@@ -172,7 +172,7 @@ const BotSection = ({ bot, index }) => {
 
                   <div className="text-xs text-gray-450 space-y-1">
                     <p>v{bot.version} • {bot.size}</p>
-                    <p>SHA256: abcd1234...</p>
+                    <p></p>
                   </div>
                 </div>
               </div>
