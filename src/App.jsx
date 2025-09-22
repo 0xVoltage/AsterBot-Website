@@ -38,7 +38,7 @@ function App() {
     ],
     status: 'active',
     version: '1.2.0',
-    size: '15MB',
+    size: '3MB',
     hasCalculator: true
   }
 
