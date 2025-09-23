@@ -53,8 +53,8 @@ function App() {
       />
 
       <main className={`relative ${showWelcomePopup ? 'blur-sm' : ''} transition-all duration-300`}>
-        <section className="h-screen relative overflow-hidden">
-          <div className="container mx-auto px-4 py-4 h-full flex flex-col">
+        <section className="min-h-screen relative overflow-hidden">
+          <div className="container mx-auto px-4 py-4 min-h-screen flex flex-col">
             {/* Join AsterDEX Section - Top */}
             <div className="glass rounded-xl p-3 border border-primary-orange/20 text-center mb-4">
               <div className="flex items-center justify-center gap-2 mb-2">
@@ -85,16 +85,16 @@ function App() {
             </div>
 
             {/* Main Content - AsterBot and Calculator */}
-            <div className="grid lg:grid-cols-2 gap-6 flex-1 min-h-0">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 flex-1 min-h-0">
               {/* Left Column - AsterBot */}
-              <div className="flex flex-col justify-start pt-8">
+              <div className="flex flex-col justify-start pt-4 lg:pt-8">
                 <div className="flex-1">
                   <BotSection bot={asterBot} index={0} />
                 </div>
               </div>
 
               {/* Right Column - Calculator */}
-              <div className="flex flex-col justify-start pt-8">
+              <div className="flex flex-col justify-start pt-4 lg:pt-8">
                 <div className="flex-1">
                   <AirdropCalculator />
                 </div>
