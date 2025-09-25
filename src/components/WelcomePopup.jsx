@@ -102,7 +102,7 @@ const WelcomePopup = ({ isVisible, onClose }) => {
                 <span className="text-primary-orange font-semibold text-sm">Team Boost Active!</span>
               </div>
               <p className="text-gray-300 text-xs">
-                Join our team on Aster and get a <span className="text-primary-orange font-bold">Team Boost of x1.05</span> on all your earnings!
+                Join our team on Aster and get a <span className="text-primary-orange font-bold">Team Boost of x1.5</span> on all your earnings!
               </p>
             </div>
 
@@ -115,7 +115,7 @@ const WelcomePopup = ({ isVisible, onClose }) => {
             >
               <span className="relative z-10">Join AsterDEX Now</span>
               <div className="relative z-10 flex items-center gap-1">
-                <span className="text-xs bg-white/20 px-2 py-1 rounded-full">+5% Boost</span>
+                <span className="text-xs bg-white/20 px-2 py-1 rounded-full">+50% Boost</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
